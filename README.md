@@ -11,4 +11,5 @@ To-do-list :
 5 : ajout de tout ce qui concerne user/leaderboard ... avec integration et lien database
 6 : memorisation des mots tapés par les utilisateur pour survivre aux refresh
 7 : ajouts des paillettes, ajouts de la soundboard des images et des trucs stylé
-8 : 
+8 : ajout d'un timer qui stress les gens et rend le jeux bcp plus difficile 
+9 : ajout d'un autre truc jsp moi
