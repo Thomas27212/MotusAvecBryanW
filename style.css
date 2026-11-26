@@ -1,0 +1,89 @@
+/* Variables faites avec l'ia via une maquette visuelle */
+:root {
+  /* Fonds & Surfaces */
+  --bg-void: #09080f;
+  --bg-surface: #13111f;
+  --bg-elevated: #1d1a2e;
+  --bg-glass: rgba(19, 17, 31, 0.82);
+
+  /* Bordures */
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.26);
+
+  /* Accents Italian Brainrot */
+  --neon-pink: #ff2a85;
+  --neon-acid: #39ff14;
+  --neon-blue: #00e5ff;
+  --neon-purple: #a855f7;
+  --neon-orange: #ff7b00;
+  --neon-yellow: #ffe600;
+
+  /* Dégradés */
+  --grad-title: linear-gradient(90deg, var(--neon-blue), var(--neon-pink), var(--neon-yellow));
+  --grad-wave: linear-gradient(90deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
+
+  /* Textes */
+  --text-primary: #f8fafc;
+  --text-secondary: #a1a1aa;
+  --text-muted: #64748b;
+  --text-inverse: #09080f;
+
+  /* États de la grille et du clavier */
+  --state-empty-bg: #110f1d;
+  --state-empty-border: rgba(255, 255, 255, 0.16);
+  --state-active-col-border: var(--neon-purple);
+
+  --state-correct-bg: #15803d;
+  --state-correct-border: var(--neon-acid);
+  --state-correct-text: #ffffff;
+
+  --state-present-bg: #d97706;
+  --state-present-border: #fbbf24;
+  --state-present-text: #ffffff;
+
+  --state-absent-bg: #252236;
+  --state-absent-border: #3b3754;
+  --state-absent-text: #71717a;
+
+  /* États des indices progressifs & défaite */
+  --state-hint-unknown-bg: #0e0c18;
+  --state-hint-unknown-border: rgba(255, 255, 255, 0.14);
+  --state-hint-revealed-bg: rgba(0, 229, 255, 0.16);
+  --state-hint-revealed-border: var(--neon-blue);
+  --state-hint-revealed-text: var(--neon-blue);
+  --state-roast-bg: rgba(255, 42, 133, 0.2);
+  --state-roast-border: var(--neon-pink);
+  --state-roast-text: var(--neon-pink);
+
+  /* Ombres & Effets Glow */
+  --shadow-surface: 0 12px 32px rgba(0, 0, 0, 0.55);
+  --glow-pink: 0 0 18px rgba(255, 42, 133, 0.45);
+  --glow-acid: 0 0 18px rgba(57, 255, 20, 0.4);
+  --glow-blue: 0 0 18px rgba(0, 229, 255, 0.45);
+  --glow-purple: 0 0 20px rgba(168, 85, 247, 0.35);
+}
+
+/* Le CSS qui suit est entièrement rédigé par Bryan le BOSS */
+
+body{
+  background: var(--bg-void);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+header{
+  background: var(--bg-surface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  margin: 0;
+  height: 50px;
+}
+
+header .button{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
