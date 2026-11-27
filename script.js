@@ -6,3 +6,4 @@ document.querySelectorAll('.button').forEach(btn => {
     son.play().catch(e => console.warn('Son bloqué :', e));
   });
 });
+
