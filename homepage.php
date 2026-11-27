@@ -34,13 +34,13 @@ $max = 3620;
 $nb_alea = rand($min, $max);
 
 // Récupérer une valeur précise
-$sql = "SELECT mot FROM mots WHERE id_mots = $nb_alea";
+$sql = "SELECT mot FROM mots WHERE id_mots = :id";
 $stmt = $pdo->prepare($sql);
-$stmt->execute(['id' => 1]);
+$stmt->execute(['id' => $nb_alea]); 
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
-echo $result;
+
 if ($result) {
-    echo $result['colonne'];
+    echo $result['mot'];
 } else {
     echo "Aucun résultat trouvé.";
 }
