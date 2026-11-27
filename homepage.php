@@ -9,6 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Federant&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<?php
+// db.php
+// Charge le fichier .env
+$env = parse_ini_file(__DIR__ . '/.env');
+
+// Utilise les variables
+$host = $env['DB_HOST'];
+$dbname = $env['DB_NAME'];
+$user = $env['DB_USER'];
+$pass = $env['DB_PASS'];
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erreur de connexion : " . $e->getMessage());
+}
+?>
 </head>
 <body>
     <header>
