@@ -26,6 +26,25 @@ try {
 } catch (PDOException $e) {
     die("Erreur de connexion : " . $e->getMessage());
 }
+
+
+// Creation d'un nombre aleatoire qui def le mot 
+$min = 2;
+$max = 3620;
+$nb_alea = rand($min, $max);
+
+// Récupérer une valeur précise
+$sql = "SELECT mot FROM mots WHERE id_mots = $nb_alea";
+$stmt = $pdo->prepare($sql);
+$stmt->execute(['id' => 1]);
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
+echo $result;
+if ($result) {
+    echo $result['colonne'];
+} else {
+    echo "Aucun résultat trouvé.";
+}
+
 ?>
 </head>
 <body>
