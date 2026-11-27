@@ -154,3 +154,36 @@ a{
   background-color: #333;
   border: none;
 }
+
+.card{
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.card >*{
+  background-color: var(--bg-elevated);
+  border: 0.5px solid var(--border-strong);
+  border-radius: 15px;
+  box-shadow: var(--shadow-surface);
+  padding:1rem;
+}
+
+.grille{
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  grid-auto-flow: column;
+}
+
+.grille >*{
+  background-color: var(--bg-elevated-strong);
+  border: 2px solid var(--state-absent-border);
+  border-radius: 15px;
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem;
+}

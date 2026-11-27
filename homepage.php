@@ -50,7 +50,7 @@ if ($result) {
 <body>
     <header>
         <div class="button logo">
-               <a href="homepage.html"> <img src="./img/Gemini_Generated_Image_h7nxcjh7nxcjh7nx-removebg-preview.png"></a>
+               <a href="homepage.php"> <img src="./img/Gemini_Generated_Image_h7nxcjh7nxcjh7nx-removebg-preview.png"></a>
         </div>
         <div class="button title">
             BRAINRODLE
@@ -77,10 +77,67 @@ if ($result) {
     <main>
         <div class="card">
             <div class="word">
-
+                <div class="heading">
+                    Devine le mot en 5 lettres (pas 6)
+                </div>
+                <hr />
+                <div class="grille">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
-            <div class="keyboard">
-
+            <div class="keyboard_random">
+                <button class="keyboard">A</button>
+                <button class="keyboard">Z</button>
+                <button class="keyboard">E</button>
+                <button class="keyboard">R</button>
+                <button class="keyboard">T</button>
+                <button class="keyboard">Y</button>
+                <button class="keyboard">U</button>
+                <button class="keyboard">I</button>
+                <button class="keyboard">O</button>
+                <button class="keyboard">P</button>
+                <button class="keyboard">Q</button>
+                <button class="keyboard">S</button>
+                <button class="keyboard">D</button>
+                <button class="keyboard">F</button>
+                <button class="keyboard">G</button>
+                <button class="keyboard">H</button>
+                <button class="keyboard">J</button>
+                <button class="keyboard">K</button>
+                <button class="keyboard">L</button>
+                <button class="keyboard">M</button>
+                <button class="keyboard">W</button>
+                <button class="keyboard">X</button>
+                <button class="keyboard">C</button>
+                <button class="keyboard">V</button>
+                <button class="keyboard">B</button>
+                <button class="keyboard">N</button>
+                <button class="keyboard">ENTER</button>
+                <button class="keyboard">DELETE</button>
             </div>
         </div>
     </main>
