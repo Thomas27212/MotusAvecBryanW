@@ -1,8 +1,8 @@
-Objectif du projet\
+Objectif du projet
 
-Faire un site web inspiré de motus, l'objectif sera de trouver le mot du jour.\
+Faire un site web inspiré de motus, l'objectif sera de trouver le mot du jour.
 
-To-do-list :\ 
+To-do-list :
 
 1 : page d'acceuil en html puis en php, structure et squellette de la page\
 2 : modelisation puis creation de la database\
@@ -15,7 +15,7 @@ To-do-list :\
 9 : ajout d'un autre truc jsp moi\
 
 
---Ce que le php doit faire--\
+--Ce que le php doit faire--
 
 1: recuperer un mot dans la base de donnée et le mettre dans une variable\
-2: \
+2: 
